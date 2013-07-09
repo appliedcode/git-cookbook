@@ -17,9 +17,6 @@ supports "mac_os_x", ">= 10.6.0"
 
 %w{ dmg build-essential yum windows runit }.each do |cookbook|
   depends cookbook
-<<<<<<< HEAD
-end
-=======
 end
 
 depends "runit", ">= 1.0"
@@ -36,4 +33,3 @@ attribute "git/server/export_all",
   :choice => ["true", "false"],
   :default => "true",
   :recipes => ["git::server"]
->>>>>>> 5860dd00c470f1bdebf42bf369d9da58029ce9f5
